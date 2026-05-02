@@ -1,4 +1,4 @@
-// Http Module: Node.js'in HTTP modülü, HTTP sunucuları ve istemcileri oluşturmak için kullanılır.
+// Http Module: Node.js'in HTTP modülü, HTTP sunucuları ve istemcileri oluşturmak için kullanıldığı bir moduldur.
 // Bu nesne bir HTTP sunucusunu temsil eder.
 // Bu sunucu, HTTP isteklerini dinler ve HTTP yanıtları gönderir.
 // Bir HTTP sunucusu oluşturmak için http.createServer() methodunu kullanabiliriz.
@@ -16,7 +16,7 @@ const http = require("http");
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
     res.write("Merhaba Akif..."); // Merhaba Akif... yazısını ekrana yazdırır.
-    res.end();
+    res.end(); // İşlemi sonlandırır.
   }
 
   if (req.url === "/api/products") {
